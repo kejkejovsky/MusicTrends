@@ -3,3 +3,5 @@ dotenv
 sqlalchemy
 psycopg2
 matplotlib
+ipython-sql
+seaborn

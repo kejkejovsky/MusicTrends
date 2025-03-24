@@ -10,8 +10,10 @@ def read_csv(file):
 
 def transform_data(df):
     df["duration_fullmin"] = df["duration_ms"] // (1000 * 60)
+    df["duration_min"] = df["duration_ms"] / (1000 * 60)
     df["track_year"] = df["track_album_release_date"].str[:4]
     df["track_yearmonth"] = df["track_album_release_date"].str[:7]
+    df["track_decade"] = (df["track_year"].astype(int) // 10) * 10
     return df
 
 
