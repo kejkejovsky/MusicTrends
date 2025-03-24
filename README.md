@@ -1,8 +1,12 @@
 # MusicTrends
 Project aims to present changes in song durations over past years.
+
 For this purpose, it uses a dataset of 30,000 songs from Spotify from the period 1957-2020.
+
 The main script extracts the data from the file, transforms it and load it to the database.
+
 The visualization script is responsible for presenting a simple plot comparing the mean length of songs over the years.
+
 The detailed analysis is done in a jupyter notebook.
 
 # Technology
